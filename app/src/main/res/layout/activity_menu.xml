@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/suwret"
+    tools:context=".Menu">
+<androidx.constraintlayout.widget.Guideline
+    android:layout_width="wrap_content"
+    android:id="@+id/h0.5"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.5"/>
+    <EditText
+        android:id="@+id/e1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/h0.5"
+        app:layout_constraintBottom_toBottomOf="@id/h0.5"
+        app:layout_constraintStart_toEndOf="@id/start"
+        app:layout_constraintEnd_toStartOf="@id/start"
+        android:textSize="35dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:inputType="textAutoCorrect"
+        android:hint="Введите имя"
+        android:textColorHint="@color/purple_700"/>
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="30dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
